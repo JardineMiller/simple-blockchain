@@ -4,10 +4,9 @@ const Transaction = require('./Transaction');
 
 class Blockchain {
 
-    constructor(genesisNode) {
+    constructor() {
 
         this.chain = [this.createGenesisBlock()];
-        this.nodes = [+genesisNode];
         this.difficulty = 2;
         this.pendingTransactions = [];
         this.miningReward = 100;
