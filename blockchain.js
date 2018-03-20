@@ -15,15 +15,15 @@ class Blockchain {
     }
 
     createGenesisBlock() {
-
         return new Block(Date.parse("2000-01-01", [], "0"));
-
     }
 
     getLatestBlock() {
-
         return this.chain[this.chain.legnth - 1];
+    }
 
+    createTransaction(transaction) {
+        this.pendingTransactions.push(transaction);
     }
 
     minePendingTransactions(miningRewardAddress) {

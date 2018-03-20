@@ -6,8 +6,6 @@ class Transaction {
         this.amount = amount;
     }
 
-    createTransaction(transaction) {
-        this.pendingTransactions.push(transaction);
-    }
+    
 
 }
