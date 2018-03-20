@@ -43,8 +43,8 @@ class Blockchain {
             const prevBlock = this.chain[i - 1];
             if(currentBlock.hash !== currentBlock.calculateHash()) return false;
             if(currentBlock.previousHash !== prevBlock.hash) return false;
-            return true;
         }
+        return true;
     }
 
     getAddressBalance(address) {
